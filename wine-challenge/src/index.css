@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #E5E5E5;
+  color: #0F1010;
+}
+
+/* Search Main Page */
+
+.search-main {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-title .glass-icon {
+  margin-left: 1rem;
+}
+
+.glass-icon {
+  width: 1.5rem;
+}
+
+/* Search Bar */
+
+.hidden {
+  display: none;
+}
+
+.searchbar-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchbar-textbox {
+  padding: 0;
+  padding-bottom: 0.2em;
+  width: 50%;
+  position: relative;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.searchbar-textbox .lookup-icon {
+  position: absolute;
+  margin-left: 1.25rem;
+  margin-top: 1.05rem;
+}
+
+.searchbar-textbox .close-icon {
+  position: absolute;
+  margin-left: -1.75rem;
+  margin-top: 1.25rem;
+}
+
+.lookup-icon {
+  width: 1rem;
+}
+
+.close-icon {
+  width: 0.75rem;
+}
+
+.search-input {
+  width: 100%;
+  height: 3rem;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  font-size: 13px;
+  line-height: 18px;
+  border: none;
+}
+
+.search-input::placeholder {
+  color: #CCCCCC;
+}
+
+.searchbar-list{
+  width: 50%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchbar-item {
+  padding: 0 0.75rem;
+  padding-top: 1rem;
+  background-color: white;
+}
+
+.searchbar-item::after {
+  content: "";
+  display: block;
+  margin-top: 1rem;
+  border-bottom: 0.001em solid #E5E5E5;;
+}
+
+.searchbar-item .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar-item .row .primary{
+  font-size: 1.25rem;
+  margin: 0;
+}
+.searchbar-item .row .secondary{
+  opacity: 0.6;
+}
+
+/* Wine Detail Page */
+
+.wine-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.wine-detail-container {
+  width: 70%;
+  margin-top: 6rem;
+}
+
+.wine-detail-header {
+  width: 100%;
+  display: flex;
+  margin-top: 0.25rem;
+  justify-content: space-between;
+}
+
+.left-side-header {
+  display: flex;
+  align-items: center;
+}
+
+.editable-title {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.editable-title[disabled] {
+  color: initial;
+}
+
+.wine-detail-header .editable-title {
+  margin: 0;
+  margin-left: 0.25rem;
+}
+
+
+.wine-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.4rem;
+  background: linear-gradient(135deg, #d200388e 0%, #d20038d5 100%);
+  border-radius: 50%;
+  color: white;
+  font-size: 0.65rem;
+  font-weight: bolder;
+}
+
+.back-btn {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.back-btn svg{
+  width: 1rem;
+}
+
+.edit-btn {
+  background-color: #00ADA8;
+  box-shadow: 0px 4px 8px rgba(51, 51, 51, 0.24);
+  border: 0;
+  border-radius: 50%;
+}
+
+.edit-btn svg {
+  width: 1rem;
+}
+
+.info-table {
+  width: 100%;
+  padding: 0 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.info-table td {
+    text-align: right;
+    padding-bottom: 0.25rem;
+}
+
+.info-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+.percent-table {
+  width: 100%;
+  font-size: 0.75rem;
+  background-color: white;
+  margin-top: 0.5rem;
+  border: 0.1em solid #CCCCCC;
+}
+
+.percent-table th {
+    text-align: right;
+    padding: 0.5rem 0.5rem;
+    border-bottom: 0.1em solid #cccccc;
+}
+
+.percent-table th:first-child {
+    text-align: left;
+}
+
+.percent-table td {
+    text-align: right;
+    padding: 0.5rem 0.5rem;
+    border-bottom: 0.1em solid #cccccc;
+}
+
+.percent-table td:first-child {
+    text-align: left;
+}
+
+.percent-table.no-spacing {
+  border-spacing:0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;  /* Optional - if you don't want to have double border where cells touch */
+}
+
+/* Menu */
+
+.menu-btn {
+  background: none;
+  border: none;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2em solid #cccccc;
+}
+
+.menu-btn.highlighted{
+  border-bottom: 0.2em solid #00ADA8;
+}
